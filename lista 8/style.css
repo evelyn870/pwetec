@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #e85f19;
+    --secondary-colro: #ee8a56;
+    --dark-color: #262627;
+    --info-color: #5d5d5d;
+    --light-color: #f8f9fc;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-image: url(https://github.com/pw1etec/brand-buz/blob/main/assets/images/bg.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    all: unset;
+    color: var(--light-color);
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 9px;
+    box-shadow: 0 0 10px var(--secondary-colro);
+    cursor: pointer;
+    transition: all o.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+header .logo {
+    flex-grow: 1;
+
+}
+
+header .menu{
+    flex-grow: 3;
+
+}
+
+header .sing{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    flex-grow: 2;
+}
+
+header .sing button{
+    background-color: var(--secondary-colro);
+    box-shadow: 1px 1px 10px var(--primary-color);
+}
+
+header .menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu ul li{
+    padding: 1rem 0.5rem;
+}
+
+.active{
+    color: #e85f19;
+    font-weight: 600;
+}
+
+header .menu ul li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary-colro);
+    transition: whidth 0.3s linear;
+}
+
+header .menu ul li::hover::after{
+    width: 100%;
+}
+
+
+
+main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+main .hero {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+
+}
+
+main .hero .hero-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .hero .hero-text h1 {
+    width: 60%;
+    font-size: 2.6rem;
+    color: #262627;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 2.7rem;
+}
+
+main .hero .hero-text h1 strong{
+    color: var(--primary-color);
+}
+
+main .hero .hero-text p{
+    font-size: 1.5rem;
+    font-weight: 50;
+    width: 90%;
+    color: var(--info-color);
+    margin-bottom: 3rem;
+}
+
+main .hero .hero-text button{
+    width: 30%;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    box-shadow: 1px 5px 10px var(--secondary-colro);
+    transition: all 0.4s;
+}
+
+main .hero .hero-text a{
+    display: flex;
+    align-items: center;
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    gap: 10px;
+}
+
+main .hero .hero-text a i {
+    width: 50px;
+    height: 50px;
+    background-color: #e85f19;
+    color: var(--primary-color);
+    background-color: white;
+    box-shadow: 0px 0px 20px var(--primary-color);
+    align-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+main .hero .hero-text button:hover {
+    background-color: var(--secondary-colro);
+    box-shadow: 1px 5px 10px var(--primary-color);
+
+}
+
+.hero-banner {
+    flex-grow: 1;
+}
+main .hero .hero-text a span{
+    border-bottom: 2px solid black;
+}
+
+main .hero .hero-banner img{
+    width: 800px;
+}
