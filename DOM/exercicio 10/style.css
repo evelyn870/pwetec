@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+input {
+    width: 250px;
+    padding: 12px;
+    border: 2px solid rgb(189, 0, 104);
+    border-radius: 25px;}
