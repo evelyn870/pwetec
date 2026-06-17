@@ -1,123 +1,74 @@
-let conta = [
-    {
-        conta: "1234-5",
-        senha: "123456",
-        nome: "Bryan",
-        saldo: 347.345
-    },
-    {
-        conta: "4321-0",
-        senha: "123456",
-        nome: "Giovanna",
-        saldo: 5000
-    },
-    {
-        conta: "4321-0",
-        senha: "123456",
-        nome: "Giovanna",
-        saldo: 5000
-    },
+let conta = {
+    agencia: "0001",
+    numero: "1234-5",
+    senha: "123456",
+    saldo: 500,
+    historico: []
+};
 
-    {
-        conta: "9876-4",
-        senha: "123456",
-        nome: "Gustavo",
-        saldo: 5000
-    },
-
-
-];
-
-function validarSenha(conta, senha, listaConta = []) {
-    if (!conta || !senha) {
-        console.log("digite um valor  valido!  conta ou senha")
-        return false
+function validarAcesso(agencia, numero, senha) {
+    if (
+        agencia == conta.agencia &&
+        numero == conta.numero &&
+        senha == conta.senha
+    ) {
+        return true;
     }
-    for (let i = 0; i < listaConta.length; i++) {
-        if (conta == listaConta[i].conta && senha == listaConta[i].senha) {
-            console.log(`Bem vindo ao Banco BryAna! Sr(a) ${listaConta[i].nome}`)
-            listaConta[i].logado = true
-            listaConta[i].posicao = i
-            return listaConta[i]
-        }
 
-    }
+    return false;
 }
 
-usuarioLogado = validarSenha("1234-5", "123456", conta)
-
-
-console.log(usuarioLogado ? "logado" : "Usuario ou senha invalida")
-function saldo(usuario) {
-
-    if (usuario.logado) {
-        console.log(usuario.nome)
-        console.table({ saldo: "R$" + usuario.saldo.toFixed(2) })
-    }
+function exibirSaldo() {
+    console.log("Saldo: R$ " + conta.saldo);
 }
 
-function saque(usuarioLogado, listaConta, valor = 0) {
-    if (!usuarioLogado) {
-        console.log("Sua conta nao está logada");
+function realizarSaque(valor) {
 
-        return
-    }
-
-    if (saque > usuarioLogado.saldo) {
-        console.log("Saldo insuficiente");
-        return
-    }
-
-    listaConta[listaConta.posicao].saldo
-}
-
-realizarSaque(valor) {
-    if (valor > this.saldo) {
+    if (valor > conta.saldo) {
         console.log("Saldo insuficiente!");
         return;
     }
+
+    let restante = valor;
+
+    let nota100 = 0;
+    while (restante >= 100) {
+        nota100++;
+        restante = restante - 100;
+    }
+
+    let nota50 = 0;
+    while (restante >= 50) {
+        nota50++;
+        restante = restante - 50;
+    }
+
+    let nota20 = 0;
+    while (restante >= 20) {
+        nota20++;
+        restante = restante - 20;
+    }
+
+    let nota10 = 0;
+    while (restante >= 10) {
+        nota10++;
+        restante = restante - 10;
+    }
+
+    conta.saldo = conta.saldo - valor;
+
+    conta.historico.push("Saque de R$ " + valor);
+
+    console.log("Saque realizado!");
+    console.log("Notas de 100: " + nota100);
+    console.log("Notas de 50: " + nota50);
+    console.log("Notas de 20: " + nota20);
+    console.log("Notas de 10: " + nota10);
 }
 
-
-let restante = valor;
-
-let notas100 = 0;
-while (restante >= 100) {
-    notas100++;
-    restante -= 100;
+// Teste
+if (validarAcesso("0001", "1234-5", "123456")) {
+    exibirSaldo();
+    realizarSaque(280);
+    exibirSaldo();
 }
-
-let notas50 = 0;
-while (restante >= 50) {
-    notas50++;
-    restante -= 50;
-}
-
-let notas20 = 0;
-while (restante >= 20) {
-    notas20++;
-    restante -= 20;
-}
-
-let notas10 = 0;
-while (restante >= 10) {
-    notas10++;
-    restante -= 10;
-}
-
-this.saldo -= valor;{
-this.historico.push("Saque de R$ " + valor);
-console.log("Saque realizado: R$ " + valor);
-console.log("Notas entregues:");
-console.log("$100: " + notas100);
-console.log("$50: " + notas50);
-console.log("$20: " + notas20);
-console.log("$10: " + notas10);
-}
-
-
-
-
-
-
-
