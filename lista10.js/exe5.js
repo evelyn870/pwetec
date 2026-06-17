@@ -1,4 +1,4 @@
-let nomes = ["Ana", "Carlos", "Ana", "João", "Carlos", "Ana"];
+let nomes = ["Evelyn", "Giovanna", "Ana", "Evelyn", "Giovanna", "Ana"];
 
 function contarOcorrencias(nomes) {
   let contador = {};
