@@ -1,7 +1,7 @@
 let livros = [
-  { titulo: "Harry Potter", autor: "J.K Rowling", ano: 2005 },
-  { titulo: "Clean Code", autor: "Robert Martin", ano: 2012 },
-  { titulo: "JavaScript", autor: "João", ano: 2020 }
+  { titulo: "Harry Potter e a Pedra Filosofal", autor: "J.K Rowling", ano: 1997 },
+  { titulo: "Dom Casmurro", autor: "Machado de Assis", ano: 1899 },
+  { titulo: "Hamnet", autor: "Maggie O'Farrell", ano: 2020 }
 ];
 
 function livrosRecentes(livros) {
