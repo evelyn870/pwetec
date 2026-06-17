@@ -65,10 +65,3 @@ function realizarSaque(valor) {
     console.log("Notas de 20: " + nota20);
     console.log("Notas de 10: " + nota10);
 }
-
-// Teste
-if (validarAcesso("0001", "1234-5", "123456")) {
-    exibirSaldo();
-    realizarSaque(280);
-    exibirSaldo();
-}
