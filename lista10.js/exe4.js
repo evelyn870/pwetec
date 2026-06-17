@@ -1,4 +1,4 @@
-let nomes = ["Ana", "Carlos", "Joao", "Mariana"]
+let nomes = ["Evelyn", "Giovanna", "Brayan", "Kaike"]
 
 function buscar(nomes) {
   for (let i = 0; i < nomes.length; i++) {
@@ -10,5 +10,5 @@ function buscar(nomes) {
   return "Nome nao encontrado"
 }
 
-console.log(buscar("Carlos"));
-console.log(buscar("Pedro"));
+console.log(buscar("Evelyn"));
+console.log(buscar("Giovanna"));
