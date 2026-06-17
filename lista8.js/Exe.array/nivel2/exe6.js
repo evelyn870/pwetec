@@ -3,5 +3,5 @@ const gerarRelatorio = (nomeAluno, status = "Pendente") => {
     console.log(status)
 }
 
- console.log(gerarRelatorio("Carlos"))
+ console.log(gerarRelatorio("Evelyn"))
  
