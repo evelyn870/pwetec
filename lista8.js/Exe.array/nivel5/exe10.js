@@ -1,5 +1,5 @@
 const sistemaEscolar = {
-    nomeDoAluno: "Pedro",
+    nomeDoAluno: "Evelyn",
     nota: [5, 8, 3, 10],
 
     geral: function () {
