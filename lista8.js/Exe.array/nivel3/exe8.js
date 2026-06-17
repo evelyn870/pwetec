@@ -5,12 +5,12 @@ let listaDeProvas = [
     },
 
     {
-        Disciplina: "Historia",
+        Disciplina: "Química",
         Nota: 8
     },
 
     {
-        Disciplina: "Sociologia",
+        Disciplina: "Física",
         Nota: 9
     }
 ];
