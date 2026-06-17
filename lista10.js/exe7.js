@@ -1,7 +1,7 @@
 let carrinho = [
-  { nome: "Mouse", quantidade: 2, preco: 50 },
-  { nome: "Teclado", quantidade: 1, preco: 100 },
-  { nome: "Monitor", quantidade: 1, preco: 900 }
+  { nome: "Colar", quantidade: 2, preco: 50 },
+  { nome: "Bolsa", quantidade: 1, preco: 100 },
+  { nome: "Tênis", quantidade: 1, preco: 900 }
 ];
 
 function calcularTotal(itens) {
