@@ -4,12 +4,12 @@ const aluno = {
   curso: "Desenvolvimeento de sistemas"
 };
 
-function move(aluno) {
+function apresentar(aluno) {
   console.log(`Oii, meu nome é ${aluno.nome}, tenho ${aluno.idade} anos, e estou estudando ${aluno.curso}... `)
 
 }
 
-move(aluno)
+apresentar(aluno)
 
 
 
