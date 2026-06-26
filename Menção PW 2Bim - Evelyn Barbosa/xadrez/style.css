@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tabuleiro {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.C1 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C2 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C3 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C4 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C5 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C6 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C7 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C8 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}   
+.C9 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C10 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C11 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C12 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C13 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C14 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.C15 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C16 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C17 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C18 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C19 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C20 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C21 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C22 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C23 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C24 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C25 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C26 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C27 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C28 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C29 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C30 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C31 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C32 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C33 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C34 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C35 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C36 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C37 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}   
+.C38 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C39 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C40 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C41 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C42 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C43 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C44 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C45 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C46 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C47 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C48 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C49 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C50 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C51 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C52 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C53 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C54 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C55 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C56 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C57 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+.C58 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+.C59 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}.C60 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}.C61 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}.C62 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}.C63 {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}.C64 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}

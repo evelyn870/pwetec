@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url('background.png');
+    
+}
+
+header{
+    background: #ff5a1f;
+    padding: 12px 20px;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.esquerda a,
+.direita a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+
+
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.menu-user{
+    display:flex;
+    gap:15px;
+}
+
+.menu-user a{
+    color:#fff;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.container{
+    width:400px;
+    margin:20px auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+    font-size:32px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:10px;
+    margin-bottom:4px;
+    font-size:14px;
+    color:#333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+    width:100%;
+    height:30px;
+    border:1px solid #aaa;
+    padding:5px;
+}
+
+textarea{
+    width:100%;
+    height:100px;
+    resize:none;
+    border:1px solid #aaa;
+    padding:5px;
+}
+
+.erro{
+    color:#ff4d4d;
+    font-size:11px;
+    margin-top:2px;
+}
+
+.radio-group,
+.checkbox-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:5px;
+}
+
+.radio-group label,
+.checkbox-group label{
+    margin-top:0;
+    font-size:13px;
+}
+
+.aceite{
+    margin-top:15px;
+}
+
+p{
+    margin-top:15px;
+    font-size:13px;
+    color:#555;
+}
+
+.botoes-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.botoes-button button{
+    width: 100px;
+    padding: 10px;
+    gap: 10px;
+    background: #008ecf;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+}

@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background-image: url('background.png');
+}
+
+header{
+    background-color: #ff5a1f;
+    padding: 15px 20px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.esquerda a,
+.direita a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    display:flex;
+    gap:40px;
+}
+
+nav a,
+.conta a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.conta{
+    display:flex;
+    gap:20px;
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.login{
+    width:350px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.login h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#333;
+}
+
+.login label{
+    font-size:18px;
+    margin-bottom:8px;
+    color:#333;
+}
+
+.login input[type="email"],
+.login input[type="password"]{
+    height:35px;
+    border:1px solid #ccc;
+    padding-left:10px;
+    margin-bottom:20px;
+}
+
+.lembrar{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.erro{
+    align-self:center;
+    color:red;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+button{
+    width:140px;
+    height:40px;
+align-self:center;
+    border:none;
+    border-radius:10px;
+
+    background:#008dc7;
+    color:white;
+
+    cursor:pointer;
+    font-size:20px;
+}

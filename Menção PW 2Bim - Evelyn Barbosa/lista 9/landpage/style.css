@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#17082b;
+    color:white;
+}
+
+header{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:35px 0;
+}
+
+.logo img{
+    width:170px;
+}
+
+nav{
+    display:flex;
+    gap:50px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.signup{
+    background:white;
+    color:#17082b;
+    border:none;
+    padding:15px 28px;
+    border-radius:40px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.signup i{
+    margin-left:10px;
+}
+
+main{
+    width:90%;
+    margin:auto;
+}
+
+.banner{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#452574;
+
+    padding:60px;
+
+    border-radius:25px;
+}
+
+.texto{
+    width:45%;
+}
+
+.texto span{
+    display:inline-block;
+    background:#a78cff;
+    color:#10051d;
+    padding:10px 20px;
+    border-radius:30px;
+    margin-bottom:30px;
+    font-size:20px;
+}
+
+.texto h1{
+    font-size:58px;
+    margin-bottom:30px;
+}
+
+.texto p{
+    font-size:22px;
+    line-height:35px;
+    margin-bottom:40px;
+}
+
+.botao{
+    background:white;
+    color:#17082b;
+    border:none;
+    border-radius:50px;
+    padding:18px 30px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.botao i{
+    margin-left:15px;
+}
+
+.imagem{
+
+    display:flex;
+    justify-content:center;
+}
+
+.imagem img{
+    width:100%;
+    max-width:500px;
+    border: radius 80px;
+}
